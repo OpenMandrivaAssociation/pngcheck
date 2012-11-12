@@ -1,0 +1,19 @@
+--- Makefile.unx	2006-06-18 00:47:35.000000000 +0200
++++ Makefile.unx.oden	2009-02-19 15:02:41.000000000 +0100
+@@ -57,13 +57,13 @@
+ all:  $(EXES)
+ 
+ $(PROG)$(E): $(PROG).c
+-	$(CC) $(CFLAGS) -o $@ $(PROG).c $(LIBS)
++	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $(PROG).c $(LIBS)
+ 
+ $(PROG2)$(E): gpl/$(PROG2).c
+-	$(CC) $(CFLAGS) -o $@ gpl/$(PROG2).c $(LIBS)
++	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ gpl/$(PROG2).c $(LIBS)
+ 
+ $(PROG3)$(E): gpl/$(PROG3).c
+-	$(CC) $(CFLAGS) -o $@ gpl/$(PROG3).c $(LIBS)
++	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ gpl/$(PROG3).c $(LIBS)
+ 
+ 
+ # maintenance ---------------------------------------------------------------

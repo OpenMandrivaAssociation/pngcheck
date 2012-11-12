@@ -1,0 +1,53 @@
+--- gpl/pngsplit.c	2007-02-11 22:46:23.000000000 +0100
++++ gpl/pngsplit.c.oden	2009-02-19 15:13:40.000000000 +0100
+@@ -141,8 +141,8 @@ int main(int argc, char *argv[])
+                   0 == strncmp( argv[argn], "-quiet", 2 ) )
+             verbose = 0;
+         else {
+-            fprintf(stderr, pngsplit_hdr);
+-            fprintf(stderr, pngsplit_usage);
++            fprintf(stderr, "%s", pngsplit_hdr);
++            fprintf(stderr, "%s", pngsplit_usage);
+             fflush(stderr);
+             return 1;
+         }
+@@ -150,8 +150,8 @@ int main(int argc, char *argv[])
+     }
+ 
+     if ( argn == argc ) {
+-        fprintf(stderr, pngsplit_hdr);
+-        fprintf(stderr, pngsplit_usage);
++        fprintf(stderr, "%s", pngsplit_hdr);
++        fprintf(stderr, "%s", pngsplit_usage);
+         fflush(stderr);
+         return 5;
+     } else {
+@@ -162,7 +162,7 @@ int main(int argc, char *argv[])
+ 
+     /*=============================  MAIN LOOP  =============================*/
+ 
+-    fprintf(stdout, pngsplit_hdr);
++    fprintf(stdout, "%s", pngsplit_hdr);
+     fflush(stdout);
+ 
+     while (argn <= argc) {
+--- gpl/png-fix-IDAT-windowsize.c	2006-06-17 23:42:13.000000000 +0200
++++ gpl/png-fix-IDAT-windowsize.c.oden	2009-02-19 15:15:44.000000000 +0100
+@@ -127,7 +127,7 @@ int main(int argc, char *argv[])
+             fprintf(stderr, "  Compiled with zlib %s; using zlib %s.\n",
+               ZLIB_VERSION, zlib_version);
+             fprintf(stderr, "\n");
+-            fprintf(stderr, png_fix_IDAT_windowsize_usage);
++            fprintf(stderr, "%s", png_fix_IDAT_windowsize_usage);
+             fflush(stderr);
+             return 1;
+         }
+@@ -143,7 +143,7 @@ int main(int argc, char *argv[])
+     fflush(stdout);
+ 
+     if ( argn == argc ) {
+-        fprintf(stderr, png_fix_IDAT_windowsize_usage);
++        fprintf(stderr, "%s", png_fix_IDAT_windowsize_usage);
+         fflush(stderr);
+         return 5;
+     } else {
