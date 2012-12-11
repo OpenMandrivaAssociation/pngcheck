@@ -46,3 +46,30 @@ rm -rf %{buildroot}
 %{_bindir}/pngcheck
 %{_bindir}/pngsplit
 
+
+
+%changelog
+* Tue Sep 15 2009 Thierry Vignaud <tvignaud@mandriva.com> 2.3.0-2mdv2010.0
++ Revision: 441881
+- rebuild
+
+* Thu Feb 19 2009 Oden Eriksson <oeriksson@mandriva.com> 2.3.0-1mdv2009.1
++ Revision: 342876
+- import pngcheck
+
+
+* Thu Feb 19 2009 Oden Eriksson <oeriksson@mandriva.org> 2.3.0-1mdv2009.1
+- initial Mandriva package
+
+* Tue Jul 10 2007 Dries Verachtert <dries@ulyssis.org> - 2.3.0-1 - 5592/dries
+- Updated to release 2.3.0.
+
+* Tue Dec 05 2006 Dries Verachtert <dries@ulyssis.org> - 2.2.0-1
+- Updated to release 2.2.0.
+
+* Tue Aug 08 2006 Dries Verachtert <dries@ulyssis.org> - 2.1.0-1
+- Updated to release 2.1.0.
+
+* Mon Jul 18 2005 Dries Verachtert <dries@ulyssis.org> - 2.0.0-1
+- Initial package.
+
