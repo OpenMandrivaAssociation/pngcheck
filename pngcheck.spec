@@ -4,7 +4,7 @@ Version:	2.3.0
 Release:	3
 License:	BSD
 Group:		Graphics
-URL:		http://www.libpng.org/pub/png/apps/pngcheck.html
+URL:		https://www.libpng.org/pub/png/apps/pngcheck.html
 Source0:	http://dl.sf.net/png-mng/pngcheck-%{version}.tar.gz
 Patch0:		pngcheck-2.3.0-ldflags_fix.diff
 Patch1:		pngcheck-2.3.0-format_not_a_string_literal_and_no_format_arguments.diff
